@@ -1,0 +1,139 @@
+.container {
+  height: 95vh;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 0;
+  margin-bottom: 2em;
+  padding: 1em;
+} 
+
+.card {
+  float: left;
+  padding: 1em;
+  margin-top: 3em;
+  margin-left: 3em;
+  background-color: rgba(228, 239, 224, 0.99); 
+  box-shadow: 0 4px 8px 0 rgba(228, 239, 227, 0.8), 0 6px 20px 0 rgba(228, 239, 227, 0.76);
+  transition: 0.5s
+}
+
+.card-img {
+  padding: 0em;
+}
+
+.btn {
+  border: none;
+  background-color: rgba(228, 239, 224);
+  padding: 0.8em;
+}
+.btn:hover {
+  border: none;
+  background-color: rgba(228, 239, 224);
+  color: #c39bd3;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 10px; /* horizontal = 0, vertical = 10px */
+}
+
+/*.card:hover {
+  transform: scale(1.05);
+}*/
+
+.move {
+  transform: scale(1.02);
+}
+
+.full{
+  transform: scale(1.7);
+  transform-origin:top left;
+}
+.shrink {
+  transform: scale(0.1);
+}
+
+.center {
+  text-align: center;
+}
+
+.qs {
+  height: 100px;
+  width:  100px;
+}
+
+.qms {
+  height: 300px;
+  width:  300px;
+}
+
+.qml {
+  height: 400px;
+  width:  400px;
+}
+
+.ql {
+  height: 600px;
+  width:  600px;
+}
+
+.rs {
+  height: 100px;
+  width:  70px;
+}
+
+.rms {
+  height: 300px;
+  width:  120px;
+}
+
+.rrms {
+  height: 150px;
+  width:  500px;
+}
+
+.rml {
+  height: 400px;
+  width:  240px;
+}
+
+.rl {
+  height: 600px;
+  width:  410px;
+}
+
+@font-face {
+  font-family: "Computer Modern";
+  src: url(../fonts/cmunss.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Computer Modern";
+  src: url(../fonts/cmunsx.otf) format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Computer Modern";
+  src: url(../fonts/cmunsi.otf) format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Computer Modern";
+  src: url(../fonts/cmunbxo.otf) format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+body {
+  font-family: "Computer Modern", sans-serif;
+  color: black;
+  background-image: url(../media/images/background-img.jpg);
+  background-position: center;
+  padding-bottom: 20px;
+}
