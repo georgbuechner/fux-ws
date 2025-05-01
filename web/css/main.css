@@ -1,4 +1,5 @@
 .container {
+  position: relative;
   height: 95vh;
   width: 60%;
   margin-left: 20%;
@@ -16,7 +17,7 @@
 }
 
 .card {
-  position: relative;
+  position: inline-block;
   float: left;
   padding: 1em;
   margin-top: 3em;
@@ -39,11 +40,17 @@
   padding: 0em;
 }
 
+.card-hidden {
+  display: none;
+  opacity: 0;
+}
+
 .btn {
   border: none;
   background-color: rgba(228, 239, 224);
   padding: 0.8em;
 }
+
 .btn:hover {
   border: none;
   background-color: rgba(228, 239, 224);
@@ -55,95 +62,8 @@ table {
   border-spacing: 0 10px; /* horizontal = 0, vertical = 10px */
 }
 
-.card:hover {
-  transform: scale(1.05);
-}
-
-.move {
-  transform: scale(1.02);
-}
-
-.full{
-  /*
-  transform: scale(1.7);
-  transform-origin:center center;*/
-  z-index: 1;
-}
-
-.shrink {
-  transform: scale(0.1);
-  z-index: -1;
-}
-
 .center {
   text-align: center;
-}
-
-.qs {
-  height: 100px;
-  width:  100px;
-}
-
-.qms {
-  height: 300px;
-  width:  300px;
-}
-
-.qml {
-  height: 400px;
-  width:  400px;
-}
-
-.ql {
-  height: 600px;
-  width:  600px;
-}
-
-.rs {
-  height: 100px;
-  width:  70px;
-}
-
-.rms {
-  height: 300px;
-  width:  120px;
-}
-
-.rrms {
-  height: 150px;
-  width:  500px;
-}
-
-.rml {
-  height: 400px;
-  width:  240px;
-}
-
-.rl {
-  height: 600px;
-  width:  410px;
-}
-
-@media only screen and (max-width: 500px) {
-  /* For mobile phones: */ 
-  .qml {
-    height: 500px;
-    width: 300px;
-  }
-
-  .ql {
-    height: 700px;
-    width:  300px;
-  }
-
-  .rl {
-    height: 650px;
-    width: 300px;
-  }
-  .rrms {
-    height: 200px;
-    width: 350px;
-  }
 }
 
 @font-face {

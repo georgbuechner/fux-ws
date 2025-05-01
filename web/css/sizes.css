@@ -1,0 +1,68 @@
+.qs {
+  height: 100px;
+  width:  100px;
+}
+
+.qms {
+  height: 300px;
+  width:  300px;
+}
+
+.qml {
+  height: 400px;
+  width:  400px;
+}
+
+.ql {
+  height: 600px;
+  width:  600px;
+}
+
+.rs {
+  height: 100px;
+  width:  70px;
+}
+
+.rms {
+  height: 300px;
+  width:  120px;
+}
+
+.rrms {
+  height: 150px;
+  width:  500px;
+}
+
+.rml {
+  height: 400px;
+  width:  240px;
+}
+
+.rl {
+  height: 600px;
+  width:  410px;
+}
+
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */ 
+  .qml {
+    height: 500px;
+    width: 300px;
+  }
+
+  .ql {
+    height: 700px;
+    width:  300px;
+  }
+
+  .rl {
+    height: 650px;
+    width: 300px;
+  }
+  .rrms {
+    height: 200px;
+    width: 350px;
+  }
+}
+
+

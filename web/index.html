@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/sizes.css">
+  <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -13,13 +15,13 @@
       <p>
         "Das Geheimnisvolle der Warenform besteht also einfach darin, daß sie
         den Menschen die gesellschaftlichen Charaktere ihrer eignen Arbeit als
-        gegenständliche Charaktere der Arbeitsprodukte..." -- <i>MEW23</i>
+        gegenständliche Charaktere der Arbeitsprodukte..." – <i>MEW23</i>
       </p>
 
       <p>"Stellen wir uns endlich, zur Abwechslung, einen Verein freier Menschen
       vor, die mit gemeinschaftlichen Produktionsmitteln arbeiten und ihre vielen
       individuellen Arbeitskräfte selbstbewußt als eine gesellschaftliche Arbeits-
-      kraft verausgaben..." -- <i>ebd.</i></p>
+      kraft verausgaben..." – <i>ebd.</i></p>
       <!-- <p>"Eine Ware scheint auf den ersten Blick ein selbstverständliches, triviales
       Ding. Ihre Analyse ergibt, daß sie ein sehr vertracktes Ding ist, voll metaphysischer 
       Spitzfindigkeit und theologischer Mucken. Soweit sie Gebrauchswert, ist nichts 
@@ -70,13 +72,18 @@
       • Ästhetik • Psychoanalyse</p>
     </div>
 
-    <div class="card rs" style="height: 120px;" onclick="full(this);">
+    <div class="card rs" style="height: 120px;" data-target="insta" onclick="full(this);">
       <p>F</p>
       <p>U</p>
       <p>X</p>
     </div>
 
-    <div class="card qml" style="width: 530px;"onclick="full(this);">
+    <div id="insta" class="card card-hidden qs" onclick="full(this);"> 
+      <p>Wanna see my insta?</p>
+      <a href="https://www.instagram.com/jan.vandick/">@jan.vandick</a>
+    </div>
+
+    <div class="card qml" style="width: 530px; height: 300px;"onclick="full(this);">
       <h4>upcomming...</h4>
       <table>
         <tr>
@@ -102,8 +109,34 @@
       </table>
     </div>
 
-    <div class="card card-img rml" style="height: 360px;" onclick="full(this);">
+    <div class="card card-img rml" style="height: 360px;" data-target="rote-abendbrote-text" onclick="full(this);">
       <img src="media/images/rote-abendbrote.jpg" style="width:100%;">
+    </div>
+
+    <div id="rote-abendbrote-text" class="card card-hidden rl" onclick="full(this);">
+      <h4>Rote Abendbrote</h4>
+      <div class="center">
+        <i>KüFa beim Linkstreff Wedding. Ab dem 06. Mai jeden 1. Dienstag im
+          Monat</i>
+      </div>
+      <p>
+        Liebe Nachbar*innen, Freund*innen und Genoss*innen, ab dem 06. Mai 2025
+        Laden wir euch jeden 01. Dienstag im Monat um 19:00 zu unserer neuen KüFa
+        (Küche für alle): »Rote Abendbrote« ein, zum gemeinsamen Schmausen, plaudern, 
+        austauschen und vernetzen. Essen gibt es gegen eine kleine Spende, oder
+        auch umsonst, es gilt: Jede gibt, was er oder sie kann oder mag. Wir wollen
+        vor allem auch Menschen in der Nachbarschaft ansprechen und zusammenbringen. 
+        In Zeiten von zunehmendem Rassismus, Sexismus und Antisemitismus, in
+        Zeiten von AfD, Hass und Hetze, wollen wir im Schatten leckeren Essens eine 
+        kleine Zelle des gemeinschaftlichen Widerstandes sein. Wir freuen uns auf
+        euch!
+      </p>
+      <div class="center">
+        Kurzinfos:<br>
+        Wann? Jeden 01. Dienstag im Monat<br>
+        Wo? Beim Linkstreff, auf dem Platz Ecke Malplaqetsstraße/Utrecht str.<br>
+        Essen gegen Spende<br>
+      </div>
     </div>
 
     <div class="card qs" style="height:110px;">
@@ -133,7 +166,7 @@
       </iframe>
     </div>
 
-    <div class="card ql" style="padding: 4em; height: 550px; width: 550px; text-align: justify;" onclick="full(this);">
+    <div class="card ql" style="padding: 4em; height: 500px; width: 500px; text-align: justify;" onclick="full(this);">
       <p>Ein Mordfall, den niemand aufklären will. Eine Verdächtige, die unsichtbar
       bleibt. Alle reden mit ihr, aber ohne es zu merken. Wir befinden uns am
       Meer, aber der Fall hätte sich auch anderswo ereignen können. Unsere
@@ -144,7 +177,7 @@
       Mordopfers, Hinrich und Andreas (Großvater und Vater unserer Kommisarin),
       Vanessa, die Staatsanwältin und schließlich Sammy, ein Hund. Der Täter ist
       nicht unter den aufgezählten Personen - es wäre allzu offensichtlich. Der
-      Krimmi beginnt am Tatort: Unsere Kommisarin steht eine Karotte essend ,
+      Krimmi beginnt am Tatort: Unsere Kommisarin steht eine Karotte essend,
       schluchzend am Strand und starrt ins blaue Meer. Die Wellen sammeln ihre
       dicken salzigen Tränen auf, irgendwo bellt ein Hund und Träne um Träne
       steigt der Meeresspiegel, bis an der niederländischen Küsste, am anderen
@@ -159,7 +192,28 @@
       irritiert fragen - wem gehört der Hund?!</p>
     </div>
 
-    <div class="card card-img qms" onclick="full(this);">
+    <div class="card qms" style="width: 400px;" onclick="full(this);">
+      <h4>Bildungsliverollenspiele</h4> 
+
+      <p>
+      <b>2023 – 2024:</b><br>
+      <i>Böse Geister – Everyone is Broken Inside</i>
+      </p>
+
+      <p>
+      <b>2018 – 2019:</b><br>
+      <i>Gawasi Gukum – Überwachen und Strafen</i>
+      </p>
+
+      <p>
+      <b>2018:</b><br>
+      <i>Ankunft – Migration, Rassismus, Identität</i>
+      </p>
+
+      <p>
+      <b>2017:</b></br>
+      <i>Konkalikong – Antisemitismus in Verschwörungstheorien</i>
+      </p>
     </div>
 
     <div class="card card-img rs" style="width: 90px; height: 140px;">
@@ -180,8 +234,47 @@
         <button class="btn"
           onclick="document.getElementById('player-2').pause()">&#x23F8</button>
       </div>
-
     </div>
+
+    <div 
+      class="card card-img rml" 
+      style="width: 280px; height: 355px;"
+      data-target="bose-geister-text" 
+      onclick="full(this);"
+    >
+      <img src="media/images/boese-geister.jpg" style="width:100%;">
+    </div>
+
+    <div id="bose-geister-text" class="card card-hidden rl" style="padding: 4em; width: 500px; height: 750px; text-align: justify;" onclick="full(this);">
+      <h4>BÖSE GEISTER - Everyone is Broken Inside</h4>
+      <p>»Das Petersburg des 19. Jahrhunderts steht für die eine Seite des russischen Widerspruchs,
+      der Zerrissenheit unserer Mutter Russland, die Seite des bereits entwickelten Industiekapitalismus 
+      gegen die Seite des feudalen Ausbeutungsregimes, wie er vor allem auf dem Land noch
+      vorherrscht. Hier in unserem schönen St. Petersburg tragen die Menschen – jedenfalls die Reichen 
+      – schicke Kleider, die Theater und Opern sind vollgestopft mit Exquisitäten, man spricht
+      französisch, ließt liberale Zeitschriften und diskutiert die “Frauenfrage”. Freilich, auch hier macht
+      der Widerspruch nicht halt. Ob die Ausbeutung und Schändung der Arbeitenden, d.h. nicht
+      Besitzenden, gegen die Ausbeutung der Leibeigenden nicht doch mindestens ebenso schlimm
+      ist, oder ob die glamourösen Opergänger*innen ihren Glanz aus alten Adelstitel oder aus den
+      ersten Finanzgeschäften der bürgerlichen Ordnung schöpfen, ist wohl weder jenen Armen noch
+      diesen Reichen anzusehen. Aber hinter diesen “Unterschieden” verbirgt sich noch ein weiterer
+      Widerspruch, um den es uns vor allem zu tun ist, nämlich den von Fassade und Innerlichkeit,
+      von hochmutigem Stolz und innerer Selbstverachtung. Unter den Charakteren, die wir bald
+      näher kennen lernen werden, wünscht sich wohl jede zweite, die nach außen hin den Glanz ihres
+      Landhauses in Pawlowsk und die besten Champagnerflaschen ausstellt, insgeheim der Fluch
+      des Geldes möge an ihr vorübergehen, ein einfaches Leben möge heilend wirken. Sowie sich
+      auch unsere nicht so gut Weggekommenen – d.h. die Verlierer*innen im Lebenslotte – täglich
+      einbilden Menschen von ganz besonderem Schlage zu sein, die es ebenso verdient hätten in die
+      Oper zu gehen, oder auch mal eine Angestellte zu erniedriegen, wie ein General Jepantschin und
+      eine Filippowna Stawrogina. Und dieser innere Zwist lässt sich wohl bei allen Persönlichkeiten
+      beobachten, ja aus ihm heraus dringt aus jedem Charakter ein Böser Geist und in jedem Bösen
+      Geist spiegelt sich die Zerrissenheit unserer Mutter Russland, die wohl ebenso lange herrschen
+      wird, wie es noch Menschen gibt, die unter geknechteten Verhältnissen leben, solang wie noch
+      eine rufen muss: “Weh spricht vergeh”. Aber Kopf hoch: Lasst unserer Charaktere die Geschichte 
+      selbst erzählen, beobachten wir sie, vielleicht können wir was
+      lernen.«</p>
+    </div>
+
 
     <div class="card rml" style="height: 460px" onclick="full(this);">
       <h4> Verräterische Einheit</h4>
@@ -192,6 +285,23 @@
         Emotion, Vernunft/Denken. Mit Regen gemeinsam durch Kieselsteinschichten zu sickern. 
         Der Welt der Sprache entrückt. Ohne artikulieren zu können, doch irgendwie Eins zu 
         sein.</p>
+    </div>
+
+    <div class="card qs" style="height: 110px;">
+      <audio id="player-3" loop> 
+        <source src="media/audio/Lying At 6 AM.mp3" type="audio/wav">
+      </audio>
+
+      <p>Lying At 6 AM.mp3<br>
+        <span style="font-size: 7px"> (feat <i>The Unkissed Dead Frog</i>)</span>
+      </p>
+      <div class="center">
+        <button class="btn"
+          onclick="document.getElementById('player-3').play()">&#x23F5</button>
+        <button class="btn"
+          onclick="document.getElementById('player-3').pause()">&#x23F8</button>
+      </div>
+
     </div>
 
     <div class="card card-img qs" style="height: 150px; width: 150px;" onclick="full(this);">
